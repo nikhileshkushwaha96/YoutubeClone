@@ -44,7 +44,7 @@ const VideoDetail = () => {
       <Box flex={1} >
          <Box sx={{width:'100%',position:'sticky',top:'86px'}} >
           <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`}
-          className='react-player' height="77vh" width='100%' 
+          className='react-player' height="74vh" width='95%' 
           controls/>
 
           <Typography color='#fff' variant='h5' fontWeight='bold' p={2}>{title}</Typography>
@@ -62,6 +62,7 @@ const VideoDetail = () => {
 
       </Box>
       <Box pd={2} py={{md:1,sx:5}}  justifyContent='center' alignItems='center'>
+        <Typography color='#fff' position='sticky'>Suggested Videos</Typography>
       <Videos videos={videos} direction='column'/>
 
     </Box>
